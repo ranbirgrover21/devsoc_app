@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header Section */
+header {
+    background-color: #007BFF;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Symphony Section */
+#symphony {
+    background-color: #e0f7fa;
+    border-left: 5px solid #004d40;
+    padding: 2em;
+    margin: 2em auto;
+    width: 80%;
+    border-radius: 8px;
+}
+
+#symphony h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #004d40;
+}
+
+#symphony p {
+    font-size: 1.2em;
+    color: #004d40;
+    text-align: justify;
+}
+
+#symphony ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#symphony ul li {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+/* Noise Section */
+#noise {
+    background-color: #ffebee;
+    border-left: 5px solid #b71c1c;
+    padding: 2em;
+    margin: 2em auto;
+    width: 80%;
+    border-radius: 8px;
+    /* Add chaotic elements */
+    font-family: 'Courier New', monospace;
+    font-size: 1.2em;
+    color: #b71c1c;
+    line-height: 1.5em;
+    text-align: justify;
+    position: relative;
+}
+
+#noise ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#noise ul li {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    position: relative;
+    transform: rotate(-2deg);
+}
+
+#noise ul li:nth-child(even) {
+    transform: rotate(4deg);
+}
+
+#noise h2 {
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #b71c1c;
+}
+
+/* Footer Section */
+footer {
+    background-color: #007BFF;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+footer a {
+    color: #ffebee;
+    text-decoration: none;
+}
