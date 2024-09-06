@@ -1,74 +1,62 @@
-/* General Page Styles */
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    overflow: hidden;
+    padding: 0;
+    text-align: center;
 }
 
-/* Harmony Page Styles */
-.harmony-page {
-    background-color: #a1eafb;
+header {
+    background-color: #007BFF;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 40px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#harmony {
+    background-color: #e0f7fa;
     color: #004d40;
-    text-align: center;
-    height: 100vh;
+    border-bottom: 5px solid #004d40;
 }
 
-.harmony-page header h1 {
-    font-size: 3rem;
-    margin: 50px 0;
-}
-
-.harmony-page .content p {
-    font-size: 1.5rem;
-    margin: 50px;
-}
-
-/* Discord Page Styles */
-.discord-page {
-    background-color: #ffcccc;
+#discord {
+    background-color: #ffebee;
     color: #b71c1c;
-    text-align: center;
-    height: 100vh;
+    border-top: 5px solid #b71c1c;
 }
 
-.discord-page header h1 {
-    font-size: 3rem;
-    margin: 50px 0;
-}
-
-.discord-page .content p {
-    font-size: 1.5rem;
-    margin: 50px;
-}
-
-/* Footer and Arrow Transition */
 footer {
-    position: absolute;
-    bottom: 20px;
+    background-color: #007BFF;
+    padding: 10px;
+    color: white;
+    position: fixed;
     width: 100%;
-    text-align: center;
+    bottom: 0;
+}
+
+footer a {
+    color: #ffebee;
+    text-decoration: none;
 }
 
 .transition-arrow {
-    font-size: 2rem;
+    display: block;
+    margin-top: 20px;
+    font-size: 1.5rem;
     text-decoration: none;
-    color: inherit;
-    animation: wave 1.5s infinite;
+    color: #007BFF;
 }
 
-/* Wavy Arrow Animation */
-@keyframes wave {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(10px);
-    }
-}
-
-/* Transition Effect */
 .transition-arrow:hover {
-    animation: none;
-    transition: transform 0.5s ease-in-out;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    transition: transform 0.3s;
 }
