@@ -1,131 +1,74 @@
-/* General Styles */
+/* General Page Styles */
 body {
+    margin: 0;
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    overflow: hidden;
 }
 
-/* Container */
-.container {
-    width: 80%;
-    margin: auto;
-    max-width: 1200px;
-}
-
-/* Header Section */
-header {
-    background: linear-gradient(to right, #007BFF, #00C851);
-    padding: 40px 0;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-header h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-header p {
-    font-size: 1.5em;
-}
-
-/* Symphony Section */
-#symphony {
-    background: #e0f7fa;
-    border-left: 5px solid #004d40;
-    padding: 3em;
-    margin: 2em auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-#symphony h2 {
-    text-align: center;
-    font-size: 2.5em;
+/* Harmony Page Styles */
+.harmony-page {
+    background-color: #a1eafb;
     color: #004d40;
-}
-
-#symphony p {
-    font-size: 1.2em;
-    color: #004d40;
-    text-align: justify;
-    line-height: 1.6;
-}
-
-#symphony .content ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-#symphony .content ul li {
-    margin-bottom: 1em;
-    font-size: 1.2em;
-}
-
-/* Noise Section */
-#noise {
-    background: #ffebee;
-    border-left: 5px solid #b71c1c;
-    padding: 3em;
-    margin: 2em auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    position: relative;
-}
-
-#noise h2 {
     text-align: center;
-    font-size: 2.5em;
+    height: 100vh;
+}
+
+.harmony-page header h1 {
+    font-size: 3rem;
+    margin: 50px 0;
+}
+
+.harmony-page .content p {
+    font-size: 1.5rem;
+    margin: 50px;
+}
+
+/* Discord Page Styles */
+.discord-page {
+    background-color: #ffcccc;
     color: #b71c1c;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+    text-align: center;
+    height: 100vh;
 }
 
-#noise p {
-    font-size: 1.2em;
-    color: #b71c1c;
-    text-align: justify;
-    line-height: 1.6;
+.discord-page header h1 {
+    font-size: 3rem;
+    margin: 50px 0;
 }
 
-#noise .content ul {
-    list-style-type: none;
-    padding-left: 0;
+.discord-page .content p {
+    font-size: 1.5rem;
+    margin: 50px;
 }
 
-#noise .content ul li {
-    margin-bottom: 1em;
-    font-size: 1.2em;
-    position: relative;
-    transform: rotate(-1deg);
-}
-
-#noise .content ul li:nth-child(even) {
-    transform: rotate(2deg);
-}
-
-/* Footer Section */
+/* Footer and Arrow Transition */
 footer {
-    background: linear-gradient(to right, #007BFF, #00C851);
-    padding: 20px 0;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
     text-align: center;
-    color: white;
 }
 
-footer p {
-    margin: 0;
-    font-size: 1.2em;
-}
-
-footer a {
-    color: #ffebee;
+.transition-arrow {
+    font-size: 2rem;
     text-decoration: none;
-    font-weight: bold;
+    color: inherit;
+    animation: wave 1.5s infinite;
 }
 
-footer a:hover {
-    text-decoration: underline;
+/* Wavy Arrow Animation */
+@keyframes wave {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+/* Transition Effect */
+.transition-arrow:hover {
+    animation: none;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.2);
 }
